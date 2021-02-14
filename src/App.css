@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+:root{
+  --green20: #2f9e44;
+  --green10: #37b24d;
+  --gray20: #212529;
+  --gray10: #343a40;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* boton login */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login{
+  display: grid;
+  /* place-items = align-items & justify-items */
+  place-items: center;
+  height: 100vh;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login a{
+  padding: 1.4rem;
+  text-align: center;
+  border-radius: 99px;
+  background-color: var(--green10);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login a:hover{
+  background-color: var(--green20);
+  cursor: pointer;
 }
+
+/* slogan welcome app */
+
+.slogan{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.slogan img{
+  height: 100px;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+
+
